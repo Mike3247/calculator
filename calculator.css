@@ -7,29 +7,39 @@
     grid-template-rows: 16.667% 66.667% 16.667%;
     }
 
-    .subgrid1{
-    display: grid;
-    grid-template-columns: 1fr;
+    .displaydiv{
+        font-size: 50px;
     }
 
 
-    .subgrid2{
+    .subgrid1{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-        .subgrid2-buttons{
+        .subgrid1-buttons{
             width: 100%;
             height: 100%;
         }
 
-    .subgrid3{
+    .subgrid2{
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 2fr 1fr 1fr;
-
     }
+
+        .subGrid2Buttons{
+        width: 100%;
+        height: 100%;
+        }
+
+
+
+
+
+
+
 /*  .d1{background: LightSkyBlue;}
     .d2{background: LightSalmon;}
     .d3{background: PaleTurquoise;}

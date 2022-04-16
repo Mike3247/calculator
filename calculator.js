@@ -21,7 +21,20 @@ const operate = function (a, operator, b) {
         else if (operator = "/") divide (a, b);
 };
 
-//const document.querySelectorAll(
+// const displayValue = 
+
+const subGrid1Numbers = document.getElementsByClassName("subGrid1Numbers");
+const subGrid1NumbersArray = Array.from(subGrid1Numbers);
+const subGridNumbersValue = subGrid1Numbers.forEach((item) => {
+  item.addEventListener()
+});
+
+const subGrid2Buttons = document.getElementsByClassName("subGrid2Buttons");
+
+const subGrid2ButtonsValueArray = Array.from(subGrid2Buttons);
+
+
+
 
 //displayValue = btn
 
