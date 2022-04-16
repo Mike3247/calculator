@@ -1,3 +1,33 @@
+const add = function (a, b) {
+  return a + b;
+};
+
+const subtract = function (a, b) {
+  return a - b;
+};
+
+const multiply = function (a, b) {
+  return a * b;
+};
+
+const divide = function (a, b) {
+  return a / b;
+};
+
+const operate = function (a, b, operator) {
+  if(operator === "+") add (a, b);
+    else if (operator === "-") subtract (a, b);
+      else if (operator === "*") multiply (a, b);
+        else if (operator === "/") divide (a, b);
+};
+
+
+
+
+
+
+
+
 
 
 
