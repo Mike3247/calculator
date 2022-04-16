@@ -12,10 +12,6 @@
     grid-template-columns: 1fr;
     }
 
-        /* .subgrid1-button{
-            width: 100%;
-            
-        } */
 
     .subgrid2{
     display: grid;

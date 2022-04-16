@@ -14,14 +14,16 @@ const divide = function (a, b) {
   return a / b;
 };
 
-const operate = function (a, b, operator) {
-  if(operator === "+") add (a, b);
-    else if (operator === "-") subtract (a, b);
-      else if (operator === "*") multiply (a, b);
-        else if (operator === "/") divide (a, b);
+const operate = function (a, operator, b) {
+  if(operator = "+") add (a, b);
+    else if (operator = "-") subtract (a, b);
+      else if (operator = "*") multiply (a, b);
+        else if (operator = "/") divide (a, b);
 };
 
+//const document.querySelectorAll(
 
+//displayValue = btn
 
 
 
