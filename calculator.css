@@ -3,18 +3,27 @@
     width: 400px;
     height: 500px;
     background: LightGray;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: 16.667% 66.667% 16.667%;
     
-}
+};
 
 .subgrid1{
+
+};
+
+
+.subgrid2{
     display: grid;
-    width: 95%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+};
+    .subgrid2-items{
+      width: 100px;  
+    };
 
-}
-
-
-
+.subgrid3{
+    display: grid;
+};
 
 /*  .d1{background: LightSkyBlue;}
     .d2{background: LightSalmon;}
