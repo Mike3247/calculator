@@ -21,7 +21,15 @@ const operate = function (a, operator, b) {
         else if (operator = "/") divide (a, b);
 };
 
-const numbersButtons = document.getElementsByClassName("subGrid1Numbers");
+const numbersButtons = document.getElementsByClassName("Numbers");
+const numbersButtonsArray = Array.from(numbersButtons);
+const changeNumbersButtonsColors = numbersButtonsArray.forEach((item) => {
+  item.addEventListener("click", () => {
+    item.style.color = "red";
+  });
+});
+
+
 
 
 // const displayValue = 
