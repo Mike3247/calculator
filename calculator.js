@@ -22,11 +22,14 @@ const operate = function (a, operator, b) {
 };
 
 // const displayValue = 
-
+const displayDiv = document.getElementsByClassName("displayDiv");
+const displayDivTextContent = displayDiv.textContent;
 const subGrid1Numbers = document.getElementsByClassName("subGrid1Numbers");
 const subGrid1NumbersArray = Array.from(subGrid1Numbers);
-const subGridNumbersValue = subGrid1Numbers.forEach((item) => {
-  item.addEventListener()
+const subGridNumbersValue = subGrid1NumbersArray.forEach((item) => {
+  item.addEventListener("click", () => {
+    displayDiv.textContent = "7";
+  })
 });
 
 const subGrid2Buttons = document.getElementsByClassName("subGrid2Buttons");
