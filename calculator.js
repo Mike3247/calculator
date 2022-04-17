@@ -21,20 +21,22 @@ const operate = function (a, operator, b) {
         else if (operator = "/") divide (a, b);
 };
 
+const numbersButtons = document.getElementsByClassName("subGrid1Numbers");
+
+
 // const displayValue = 
-const displayDiv = document.getElementsByClassName("displayDiv");
-const displayDivTextContent = displayDiv.textContent;
-const subGrid1Numbers = document.getElementsByClassName("subGrid1Numbers");
-const subGrid1NumbersArray = Array.from(subGrid1Numbers);
-const subGridNumbersValue = subGrid1NumbersArray.forEach((item) => {
-  item.addEventListener("click", () => {
-    displayDiv.textContent = "7";
-  })
-});
+// const displayDiv = document.getElementsByClassName("displayDiv");
+// const displayDivTextContent = displayDiv.textContent;
+// const subGrid1Numbers = document.getElementsByClassName("subGrid1Numbers");
+// const subGrid1NumbersArray = Array.from(subGrid1Numbers);
+// const subGridNumbersValue = subGrid1NumbersArray.forEach((item) => {
+//   item.addEventListener("click", () => {
+//     // const 
+//     // displayDivTextContent = ;
+//   })
+// });
 
-const subGrid2Buttons = document.getElementsByClassName("subGrid2Buttons");
 
-const subGrid2ButtonsValueArray = Array.from(subGrid2Buttons);
 
 
 
