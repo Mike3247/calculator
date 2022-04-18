@@ -28,8 +28,31 @@ const changeNumbersButtonsColors = numbersButtonsArray.forEach((item) => {
     item.style.color = "red";
   });
 });
+/////////////////////////////////////////////////////////////////////
+// MS 2022/04/17 11:05 - reconsider/express in plain english
+// your goal with this part of code
+/////////////////////////////////////////////////////////////////////
+
+// MS 2022/04/17 20:10 goal: set user click of a number button
+// to change textContent of digitsDisplayDiv to the value of
+// the number on the clicked button.
+
+const Display7 = numbersButtonsArray.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = "7";
+    console.log(displayDiv);
+    console.log(displayDiv.textContent);
+    // displayDiv.textContent = "7";
+    // const displayDivArray = Array.from(displayDiv);
+    // displayDivArray.textContent.style.color = "red";
+  });
+});
 
 
+
+// MS 2022/04/17 20:10 goal: set user click of a number button
+// to change the value of the return result of the current equation
+// function operate()
 
 
 // const displayValue = 
