@@ -37,7 +37,7 @@ const changeNumbersButtonsColors = numbersButtonsArray.forEach((item) => {
 // to change textContent of digitsDisplayDiv to the value of
 // the number on the clicked button.
 
-const Display7 = numbersButtonsArray.forEach((item) => {
+const display7 = numbersButtonsArray.forEach((item) => {
   item.addEventListener("click", () => {
     document.getElementById("displayDiv").textContent = "7";
     console.log(displayDiv);
@@ -48,6 +48,23 @@ const Display7 = numbersButtonsArray.forEach((item) => {
   });
 });
 
+// MS 2022/04/18 09:17 - goal: set user click of the "9" button
+// to change textContent of digitsDisplayDiv to "9".
+
+const display9Element = document.getElementsByClassName("9");
+console.log(display9Element);
+const display9Array = Array.from(display9Element);
+const display9 = display9Array.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = "9";
+  });
+});
+
+// display9Array.addEventListener("click", () => {
+//   document.getElementById("displayDiv").textContent = "9";
+// });
+
+/////////////////////////////////////////////////////////////////////
 
 
 // MS 2022/04/17 20:10 goal: set user click of a number button
