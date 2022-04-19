@@ -21,7 +21,7 @@ const operate = function (a, operator, b) {
         else if (operator = "/") divide (a, b);
 };
 
-const numbersButtons = document.getElementsByClassName("numbers");
+const numbersButtons = document.getElementsByClassName("numbersDivs");
 const numbersButtonsArray = Array.from(numbersButtons);
 const changeNumbersButtonsColors = numbersButtonsArray.forEach((item) => {
   item.addEventListener("click", () => {
@@ -37,19 +37,23 @@ const changeNumbersButtonsColors = numbersButtonsArray.forEach((item) => {
 // to change textContent of digitsDisplayDiv to the value of
 // the number on the clicked button.
 // MS 2022/04/18 10:56 [...] with one function.
-const displayNumbers = numbersButtonsArray.forEach((item) => {
-  item.addEventListener("click", () => {
+// const displayNumbers = numbersButtonsArray.forEach((item) => {
+//   item.addEventListener("click", () => {
     
-    document.getElementById("displayDiv").textContent = document.getElementById("numbers").textContent;
-    //console.log(item);
-    console.log( document.getElementById("displayDiv").textContent);
-    return item;
-   // console.log(displayDiv.textContent);
-    // displayDiv.textContent = "7";
-    // const displayDivArray = Array.from(displayDiv);
-    // displayDivArray.textContent.style.color = "red";
-  });
-});
+//    const x = document.getElementById("displayDiv").textContent = document.getElementsByClassName("numbers").textContent;
+//    const y = document.getElementById("displayDiv").textContent;
+//    console.log(item);
+//     //console.log(parseInt(document.getElementsByClassName("numbersButtons").textContent));
+//     //console.log(document.getElementById("displayDiv").textContent);
+//     console.log(x);
+//     console.log(y);
+//     //return item;
+//    // console.log(displayDiv.textContent);
+//     // displayDiv.textContent = "7";
+//     // const displayDivArray = Array.from(displayDiv);
+//     // displayDivArray.textContent.style.color = "red";
+//   });
+// });
 
 // // MS 2022/04/18 09:17 - goal: set user click of the "9" button
 // // to change textContent of digitsDisplayDiv to "9".
@@ -87,14 +91,20 @@ const displayNumbers = numbersButtonsArray.forEach((item) => {
 // //   });
 // // });
 
-// const display6Element = document.getElementsByClassName("6");
-// // console.log(display6Element);
-// const display6Array = Array.from(display6Element);
-// const display6 = display6Array.forEach((item) => {
-//   item.addEventListener("click", () => {
-//     document.getElementById("displayDiv").textContent = "6";
-//   });
-// });
+const button6 = document.getElementsByClassName("6");
+// console.log(display6Element);
+const button6Array = Array.from(button6);
+const display6 = button6Array.forEach((item) => {
+  item.addEventListener("click", () => {
+    
+    let numberOfButton6 = document.getElementById("6");
+    numberOfButton6 = numberOfButton6.textContent;
+    console.log(numberOfButton6);
+    document.getElementById("displayDiv").textContent = numberOfButton6;
+    displayValue = numberOfButton6;
+    console.log(displayValue);
+  });
+});
 
 // const display5Element = document.getElementsByClassName("5");
 // // console.log(display5Element);
@@ -282,4 +292,3 @@ dynamicdivs.slice(1, 5).addEventListener("mouseout", event => {
   console.log("Mouse out");
 });
 */
-numbers
