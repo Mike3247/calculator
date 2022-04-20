@@ -21,13 +21,13 @@ const operate = function (a, operator, b) {
         else if (operator = "/") divide (a, b);
 };
 
-const numbersButtons = document.getElementsByClassName("numbersDivs");
-const numbersButtonsArray = Array.from(numbersButtons);
-const changeNumbersButtonsColors = numbersButtonsArray.forEach((item) => {
-  item.addEventListener("click", () => {
-    item.style.color = "red";
-  });
-});
+// const numbersButtons = document.getElementsByClassName("numbersDivs");
+// const numbersButtonsArray = Array.from(numbersButtons);
+// const changeNumbersButtonsColors = numbersButtonsArray.forEach((item) => {
+//   item.addEventListener("click", () => {
+//     item.style.color = "red";
+//   });
+// });
 /////////////////////////////////////////////////////////////////////
 // MS 2022/04/17 11:05 - reconsider/express in plain english
 // your goal with this part of code
@@ -91,27 +91,35 @@ const changeNumbersButtonsColors = numbersButtonsArray.forEach((item) => {
 // //   });
 // // });
 
-const button6 = document.getElementsByClassName("6");
-// console.log(display6Element);
-const button6Array = Array.from(button6);
-const display6 = button6Array.forEach((item) => {
+const numbersButtons = document.getElementsByClassName("numbersButtons");
+const numbersButtonsArray = Array.from(numbersButtons);
+const displayValue = numbersButtonsArray.forEach((item) => {
   item.addEventListener("click", () => {
-    
     let numberOfButton6 = document.getElementById("6");
     numberOfButton6 = numberOfButton6.textContent;
     console.log(numberOfButton6);
-    document.getElementById("displayDiv").textContent = numberOfButton6;
-    displayValue = numberOfButton6;
-    console.log(displayValue);
+    return numberOfButton6; // MS 2022/04/19 here trying to figure out
+    // a or the method to store numberOfButton6 into displayValue
+
+    //if (item = numberOfButton6)
+    //document.getElementById("displayDiv").textContent = numberOfButton6;
+    //document.getElementById("displayDiv").textContent = numberOfButton6;
+    // console.log(numberOfButton6);
+    // return;
+    
   });
 });
-
-// const display5Element = document.getElementsByClassName("5");
-// // console.log(display5Element);
-// const display5Array = Array.from(display5Element);
-// const display5 = display5Array.forEach((item) => {
+console.log(displayValue);
+// const button5 = document.getElementsByClassName("5");
+// const button5Array = Array.from(button5);
+// const display5 = button5Array.forEach((item) => {
 //   item.addEventListener("click", () => {
-//     document.getElementById("displayDiv").textContent = "5";
+//     let numberOfButton5 = document.getElementById("5");
+//     numberOfButton5 = numberOfButton5.textContent;
+//     console.log(numberOfButton5);
+//     document.getElementById("displayDiv").textContent = numberOfButton5;
+//     displayValue = numberOfButton5;
+//     console.log(displayValue);
 //   });
 // });
 
