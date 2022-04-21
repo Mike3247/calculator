@@ -15,10 +15,10 @@ const divide = function (a, b) {
 };
 
 const operate = function (a, operator, b) {
-  if(operator = "+") add (a, b);
-    else if (operator = "-") subtract (a, b);
-      else if (operator = "*") multiply (a, b);
-        else if (operator = "/") divide (a, b);
+  if(operator == "+") add (a, b);
+    else if (operator == "-") subtract (a, b);
+      else if (operator == "*") multiply (a, b);
+        else if (operator == "/") divide (a, b);
 };
 
 // const numbersButtons = document.getElementsByClassName("numbersDivs");
@@ -57,117 +57,135 @@ const operate = function (a, operator, b) {
 
 // // MS 2022/04/18 09:17 - goal: set user click of the "9" button
 // // to change textContent of digitsDisplayDiv to "9".
+// const displayButtonsValue
 
-// const display9Element = document.getElementsByClassName("9");
-// // console.log(display9Element);
-// const display9Array = Array.from(display9Element);
-// const display9 = display9Array.forEach((item) => {
-//   item.addEventListener("click", () => {
-//     document.getElementById("displayDiv").textContent = "9";
-//   });
-// });
+const display9Element = document.getElementsByClassName("9");
+// console.log(display9Element);
+const display9Array = Array.from(display9Element);
+const display9 = display9Array.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = "9";
+    let display9 = "9"
+    console.log(display9);
+    return "9";
+  });
+});
+
 
 // // MS 2022/04/19 09:31 - goal: set user click of the "8" button
 // // to change textContent of digitsDisplayDiv to "8".
 
-// const display8Element = document.getElementsByClassName("8");
-// // console.log(display8Element);
-// const display8Array = Array.from(display8Element);
-// const display8 = display8Array.forEach((item) => {
-//   item.addEventListener("click", () => {
-//     document.getElementById("displayDiv").textContent = "8";
-//   });
-// });
-
-// // MS 2022/04/19 09:32 - goal: set user click of the "X number" button
-// // to change textContent of digitsDisplayDiv to "X number".
-
-// // const display7Element = document.getElementsByClassName("7");
-// // // console.log(display7Element);
-// // const display7Array = Array.from(display7Element);
-// // const display7 = display7Array.forEach((item) => {
-// //   item.addEventListener("click", () => {
-// //     document.getElementById("displayDiv").textContent = "7";
-// //   });
-// // });
-
-const numbersButtons = document.getElementsByClassName("numbersButtons");
-const numbersButtonsArray = Array.from(numbersButtons);
-const displayValue = numbersButtonsArray.forEach((item) => {
+const display8Element = document.getElementsByClassName("8");
+// console.log(display8Element);
+const display8Array = Array.from(display8Element);
+const display8 = display8Array.forEach((item) => {
   item.addEventListener("click", () => {
-    let numberOfButton6 = document.getElementById("6");
-    numberOfButton6 = numberOfButton6.textContent;
-    console.log(numberOfButton6);
-    return numberOfButton6; // MS 2022/04/19 here trying to figure out
-    // a or the method to store numberOfButton6 into displayValue
-
-    //if (item = numberOfButton6)
-    //document.getElementById("displayDiv").textContent = numberOfButton6;
-    //document.getElementById("displayDiv").textContent = numberOfButton6;
-    // console.log(numberOfButton6);
-    // return;
-    
+    document.getElementById("displayDiv").textContent = "8";
   });
 });
-console.log(displayValue);
-// const button5 = document.getElementsByClassName("5");
-// const button5Array = Array.from(button5);
-// const display5 = button5Array.forEach((item) => {
+
+// MS 2022/04/19 09:32 - goal: set user click of the "X number" button
+// to change textContent of digitsDisplayDiv to "X number".
+
+
+const display7Element = document.getElementsByClassName("7");
+// console.log(display7Element);
+const display7Array = Array.from(display7Element);
+const display7 = display7Array.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = "7";
+  });
+});
+
+const display6Element = document.getElementsByClassName("6");
+// console.log(display6Element);
+const display6Array = Array.from(display6Element);
+const display6 = display6Array.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = "6";
+  });
+});
+
+
+
+// const numbersButtons = document.getElementsByClassName("numbersButtons");
+// const numbersButtonsArray = Array.from(numbersButtons);
+// function displayButtonsValue () { numbersButtonsArray.forEach((item) => {
 //   item.addEventListener("click", () => {
-//     let numberOfButton5 = document.getElementById("5");
-//     numberOfButton5 = numberOfButton5.textContent;
-//     console.log(numberOfButton5);
-//     document.getElementById("displayDiv").textContent = numberOfButton5;
-//     displayValue = numberOfButton5;
-//     console.log(displayValue);
+//     let Button6 = document.getElementsByClassName("6");
+//     let numberOfButton6 = Button6.textContent;
+//     console.log(numberOfButton6);
+//     let numberOfButton6 = document.getElementById("6");
+//     numberOfButton6 = numberOfButton6.textContent;
+//     //console.log(numberOfButton6);
+//     return item; // MS 2022/04/19 here trying to figure out
+//     a or the method to store numberOfButton6 into displayValue
+
+//     if (item = numberOfButton6)
+//     document.getElementById("displayDiv").textContent = numberOfButton6;
+//     document.getElementById("displayDiv").textContent = numberOfButton6;
+//     console.log(numberOfButton6);
+//     return;
+    
 //   });
 // });
 
-// const display4Element = document.getElementsByClassName("4");
-// // console.log(display4Element);
-// const display4Array = Array.from(display4Element);
-// const display4 = display4Array.forEach((item) => {
-//   item.addEventListener("click", () => {
-//     document.getElementById("displayDiv").textContent = "4";
-//   });
-// });
+// };
 
-// const display3Element = document.getElementsByClassName("3");
-// // console.log(display3Element);
-// const display3Array = Array.from(display3Element);
-// const display3 = display3Array.forEach((item) => {
-//   item.addEventListener("click", () => {
-//     document.getElementById("displayDiv").textContent = "3";
-//   });
-// });
 
-// const display2Element = document.getElementsByClassName("2");
-// // console.log(display2Element);
-// const display2Array = Array.from(display2Element);
-// const display2 = display2Array.forEach((item) => {
-//   item.addEventListener("click", () => {
-//     document.getElementById("displayDiv").textContent = "2";
-//   });
-// });
+const button5 = document.getElementsByClassName("5");
+const button5Array = Array.from(button5);
+const display5 = button5Array.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = "5";
+  });
+});
 
-// const display1Element = document.getElementsByClassName("1");
-// // console.log(display1Element);
-// const display1Array = Array.from(display1Element);
-// const display1 = display1Array.forEach((item) => {
-//   item.addEventListener("click", () => {
-//     document.getElementById("displayDiv").textContent = "1";
-//   });
-// });
+const display4Element = document.getElementsByClassName("4");
+// console.log(display4Element);
+const display4Array = Array.from(display4Element);
+const display4 = display4Array.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = "4";
+  });
+});
 
-// const display0Element = document.getElementsByClassName("0");
-// // console.log(display0Element);
-// const display0Array = Array.from(display0Element);
-// const display0 = display0Array.forEach((item) => {
-//   item.addEventListener("click", () => {
-//     document.getElementById("displayDiv").textContent = "0";
-//     return 0;
-//   });
-// });
+const display3Element = document.getElementsByClassName("3");
+// console.log(display3Element);
+const display3Array = Array.from(display3Element);
+const display3 = display3Array.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = "3";
+  });
+});
+
+const display2Element = document.getElementsByClassName("2");
+// console.log(display2Element);
+const display2Array = Array.from(display2Element);
+const display2 = display2Array.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = "2";
+  });
+});
+
+const display1Element = document.getElementsByClassName("1");
+// console.log(display1Element);
+const display1Array = Array.from(display1Element);
+const display1 = display1Array.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = "1";
+  });
+});
+
+const display0Element = document.getElementsByClassName("0");
+// console.log(display0Element);
+const display0Array = Array.from(display0Element);
+const display0 = display0Array.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = "0";
+    return 0;
+  });
+});
 // MS 2022/04/19 10:50 - goal: set change of
 // document.getElementById("displayDiv").textContent to change
 // displayValue value.
