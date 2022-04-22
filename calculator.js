@@ -15,11 +15,131 @@ const divide = function (a, b) {
 };
 
 const operate = function (a, operator, b) {
-  if(operator == "+") add (a, b);
-    else if (operator == "-") subtract (a, b);
-      else if (operator == "*") multiply (a, b);
-        else if (operator == "/") divide (a, b);
+ 
+  if(operator == "+") { add (a, b);}
+    else if (operator === "-") subtract (a, b);
+      else if (operator === "*") multiply (a, b);
+        else if (operator === "/") divide (a, b);
 };
+
+// MS 2022/04/22 16:51 => write function that store value of
+///operation buttons in a variable 
+
+const displayPlusElement = document.getElementsByClassName("+");
+// console.log(display9Element);
+const displayPlusArray = Array.from(displayPlusElement);
+const displayPlus = displayPlusArray.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = "+";
+    let displayPlus = "+"
+    console.log(displayPlus);
+    return "+";
+  });
+});
+
+const displayMinusElement = document.getElementsByClassName("-");
+// console.log(display9Element);
+const displayMinusArray = Array.from(displayMinusElement);
+const displayMinus = displayMinusArray.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = "-";
+    let displayMinus = "-"
+    console.log(displayMinus);
+    return "-";
+  });
+});
+
+const displayMultipliedByElement = document.getElementsByClassName("*");
+// console.log(display9Element);
+const displayMultipliedByArray = Array.from(displayMultipliedByElement);
+const displayMultipliedBy = displayMultipliedByArray.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = "*";
+    let displayMultipliedBy = "*"
+    console.log(displayMultipliedBy);
+    return "*";
+  });
+});
+
+const displayDividedByElement = document.getElementsByClassName("/");
+// console.log(display9Element);
+const displayDividedByArray = Array.from(displayDividedByElement);
+const displayDividedBy = displayDividedByArray.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = "/";
+    let displayDividedBy = "/"
+    console.log(displayDividedBy);
+    return "/";
+  });
+});
+
+const displayAllClearElement = document.getElementsByClassName("AC");
+// console.log(display9Element);
+const displayAllClearArray = Array.from(displayAllClearElement);
+const displayAllClear = displayAllClearArray.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = " ";
+    let displayAllClear = "/"
+    console.log(displayAllClear);
+    return " ";
+  });
+});
+
+const displaySignChangeElement = document.getElementsByClassName("+/-");
+// console.log(display9Element);
+const displaySignChangeArray = Array.from(displaySignChangeElement);
+const displaySignChange = displaySignChangeArray.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = "+/-";
+    ///document.getElementById("displayDiv").textContent.appendChild("+/-");
+    //// MS 2022/04/22 18:16 => write proper code for this ^^^^^.
+    ////////////
+    ////////////
+    let displaySignChange = "+/-"
+    console.log(displaySignChange);
+    return "+/-";
+  });
+});
+
+const displayPercentageElement = document.getElementsByClassName("%");
+// console.log(display9Element);
+const displayPercentageArray = Array.from(displayPercentageElement);
+const displayPercentage = displayPercentageArray.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = "%";
+    let displayPercentage = "%"
+    console.log(displayPercentage);
+    return "%";
+  });
+});
+
+const displayDotElement = document.getElementsByClassName(".");
+// console.log(display9Element);
+const displayDotArray = Array.from(displayDotElement);
+const displayDot = displayDotArray.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = ".";
+    let displayDot = "."
+    console.log(displayDot);
+    return ".";
+  });
+});
+
+const displayEqualsElement = document.getElementsByClassName("=");
+// console.log(display9Element);
+const displayEqualsArray = Array.from(displayEqualsElement);
+const displayEquals = displayEqualsArray.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("displayDiv").textContent = "=";
+    let displayEquals = "="
+    console.log(displayEquals);
+    return "=";
+  });
+});
+// MS 2022/04/21 14:43 => write operate function that works.
+// i.e. write operate function which can be called to take an operator
+// and 2 numbers and call one of the operation functions
+// on those numbers
 
 // const numbersButtons = document.getElementsByClassName("numbersDivs");
 // const numbersButtonsArray = Array.from(numbersButtons);
